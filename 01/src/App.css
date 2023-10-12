@@ -1,42 +1,48 @@
-#root {
-  max-width: 1280px;
-  margin: 0;
-  padding: 0;
-  text-align: c;
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;1,400;1,500;1,700&family=Handlee&family=Montserrat:wght@500&family=Roboto+Condensed:wght@300&family=Roboto:wght@500&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255,255,255, 0);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: "Roboto Condesed" sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* *******Navbar****** */
+/* .ma{
+  height: 5.25rem;
+  
+} */
+
+/* ****MENU LINKS***** */
+
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+nav ul li {
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.18rem solid var(--primary-dark);
 }
 
-.card {
-  padding: 2em;
+.navbar-brand .ma{
+  max-width: 17.25rem;
+  padding: o !important;
+  height: 6rem !important;
 }
 
-.read-the-docs {
-  color: #888;
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.18rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.18rem solid var(--primary-orange);
 }
